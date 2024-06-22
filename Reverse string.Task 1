@@ -1,0 +1,10 @@
+def reverse(st):
+    reverseStr = "  "
+    for i in st:
+     reverseStr = i+reverseStr
+    return reverseStr
+R = input("Enter the string:")
+print("Original string is :",R)
+print("Reversed string:",reverse(R))
+
+       
