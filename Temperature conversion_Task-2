@@ -1,0 +1,17 @@
+print("1.Fahrenheit to celsius conversion:")
+print("2.Celsius to fahrenheit conversion:")
+while True:
+            choice = int(input("Enter your choice:"))
+            if choice==1:
+                f = int(input("Enter the temperature in Fahrenheit:"))
+                c = (5/9)*(f-32)
+                print(f, "Degree Fahrenheit is equal to %.2f" % c ,"Degree Celsius")
+            if choice==2:
+                c = int(input("Enter the temperature in Celsius:"))
+                f = (9/5)*(c+32)
+                print(c, "Degree Fahrenheit is equal to %.2f" % f ,"Degree Fahrenheit")
+            else:
+                print("Invaild choice.Please enter the correct choice.")
+            cont = input("Do you want to convert another temperature?(yes/no):")
+            if cont !='yes':
+                break
