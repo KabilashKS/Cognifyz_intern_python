@@ -1,0 +1,13 @@
+import re
+pattern = "^[a-z 0-9]+[\._]?[a-z 0-9]+[@]\w+[.]\w{2,3}$"
+while True:
+    Email_id = input("Enter your email ID:")
+    if re.search(pattern,Email_id):
+        print("Email_id} is valid.")
+    else:
+     print("{Email_id is invalid.")
+     cont = input("try again.Did you want to contiune(yes/no):")
+     if cont !='yes':
+            break
+            
+    
