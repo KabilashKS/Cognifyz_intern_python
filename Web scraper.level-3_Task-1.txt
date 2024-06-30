@@ -1,0 +1,9 @@
+from bs4 import BeautifulSoup
+import requests
+import re
+url = 'https://webscraper.io/test-sites/e-commerce/allinone'
+datas = requests.get(url)
+soupObj = BeautifulSoup(datas.content)
+for price in re.finditer(r'<h4 class="price float-end card-title pull-right">(.*?)</h4>',str(soupObj)):
+    print(price.group(1))
+    print()
