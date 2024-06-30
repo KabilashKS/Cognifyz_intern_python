@@ -1,0 +1,10 @@
+while True:
+    word = input("Enter the word to find a palindrone or not :")
+    rev=(word[::-1])
+    if rev==word:
+        print("The given word is palindrome")
+    else:
+        print("The given word is not a palindrome")
+        rep = input("Try gain with another word(yes/no):")
+        if rep !='yes':
+            break
